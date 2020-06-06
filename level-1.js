@@ -30,8 +30,9 @@ for (var counter = 15; counter <= 25; counter++) {
 
 // Question 6
 for (var counter = 15; counter <= 25; counter++) {
-  console.log(counter);
-  break;
+  if (counter === 20) {
+    console.log(counter);
+  }
 }
 
 // Question 7
@@ -45,11 +46,15 @@ var caArray = [
   },
   // second item
   {
-    semester: "The second semester",
-    numberOfSemesters: 2,
+    assignment: "The second assignment",
+    numberOfAssignments: 2,
     theTruth: false,
   },
 ];
+
+for (var i = 0; i < caArray.length; i++) {
+  console.log(caArray[i].numberOfAssignments), console.log(caArray[i].theTruth);
+}
 
 // Question 8
 
